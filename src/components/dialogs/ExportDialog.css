@@ -1,0 +1,91 @@
+.export-stats h4 {
+  margin: 0 0 var(--spacing-md) 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.stat-item {
+  background: var(--color-bg);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.stat-value {
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+.stat-value.success {
+  color: var(--color-success);
+}
+
+.stat-value.warning {
+  color: var(--color-warning);
+}
+
+.export-option {
+  margin: var(--spacing-md) 0;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--color-bg);
+  border-radius: var(--radius-sm);
+}
+
+.export-option label {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.export-option input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.export-note {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-top: var(--spacing-md);
+}
+
+.export-note code {
+  font-family: var(--font-mono);
+  background: var(--color-bg-dark);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.export-complete {
+  text-align: center;
+  padding: var(--spacing-md);
+}
+
+.export-success {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-success);
+  margin-bottom: var(--spacing-md);
+}
+
+.export-complete code {
+  font-family: var(--font-mono);
+  background: var(--color-bg-dark);
+  padding: 2px 6px;
+  border-radius: 3px;
+}

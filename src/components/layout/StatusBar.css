@@ -1,0 +1,56 @@
+.status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-xs) var(--spacing-md);
+  background: var(--color-bg-panel);
+  border-top: 1px solid var(--color-border);
+  height: 32px;
+  font-size: 12px;
+}
+
+.status-left {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.mode-indicator {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--color-text-secondary);
+}
+
+.mode-indicator.active {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.mode-indicator kbd {
+  margin-left: var(--spacing-xs);
+}
+
+.saving-indicator {
+  color: var(--color-warning);
+}
+
+.status-message {
+  color: var(--color-text-secondary);
+}
+
+.status-right {
+  display: flex;
+  align-items: center;
+}
+
+.shortcut-hint {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--color-text-secondary);
+}
+
+.shortcut-hint kbd {
+  margin-right: 2px;
+}
